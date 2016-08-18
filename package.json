@@ -24,6 +24,7 @@
     "url": "https://github.com/ianbjorndilling/react-typewriter.git"
   },
   "dependencies": {
+    "object-assign": "^4.1.0",
     "react": "^0.14.7"
   },
   "devDependencies": {

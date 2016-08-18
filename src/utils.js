@@ -1,4 +1,5 @@
 import React from 'react';
+import assign from 'object-assign';
 
 // Enclosing scope for local state variables.
 export var styleComponentSubstring = (() => {
@@ -19,7 +20,7 @@ export var styleComponentSubstring = (() => {
 
       if (_index >= _start && (!_end || _index < _end)) {
         cloneProps = {
-          style: React.addons.update(style || {}, {$merge: _styles})
+          style: assign(style || {}, _styles)
         };
       }
       _index++;
