@@ -132,10 +132,10 @@ export var componentTokenAt = (() => {
 
       let child = children[childIndex++];
 
-      if (typeof child !== 'string' && child.props) {
+      if (typeof child !== 'string') {
 
         // treat Stamp components as a single token.
-        if (child.props.stamp) {
+        if (child.props && child.props.stamp) {
           if (!_index) {
             token = child;
           } else {
